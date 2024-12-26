@@ -1,0 +1,57 @@
+# Unity 文件夹
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+
+# Unity 自动生成的元数据
+[Mm]emoryCaptures/
+*.pidb
+*.sln
+*.userprefs
+*.csproj
+
+# 特定平台的缓存或中间文件
+*.apk
+*.aab
+*.unitypackage
+*.ipa
+*.exe
+
+# Unity 云构建
+[Uu]ser[Ss]ettings/
+
+# 本地设置
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# 系统生成文件
+*.log
+*.tmp
+*.bak
+*.orig
+
+# Visual Studio/JetBrains Rider
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.ide
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/modules.xml
+
+# 其他
+*.orig
+*.mode1v3
+*.mode2v3
+*.ccp4
+*.lock
+*.lock.json
