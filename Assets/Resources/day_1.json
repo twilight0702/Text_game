@@ -10,7 +10,8 @@
             "id": 2,
             "text": "这是哪里······？",
             "options": [],
-            "next":3
+            "next":3,
+            "effect":"shake"
         },
         {
             "id": 3,

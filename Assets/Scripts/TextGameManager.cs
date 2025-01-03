@@ -23,6 +23,7 @@ public class Scene
     public string text;
     public Option[] options;
     public int next;
+    public String effect;
 }
 
 [System.Serializable]
@@ -60,7 +61,7 @@ public class TextGameManager : MonoBehaviour
     void Update()
     {
         // 鼠标左键点击且鼠标指针在UI上时
-        if (Input.GetMouseButtonDown(0) && EventSystem.current.IsPointerOverGameObject())
+        if (Input.GetMouseButtonDown(0))
         {
             switch (curState)
             {
@@ -100,6 +101,10 @@ public class TextGameManager : MonoBehaviour
 
         // 更新文本
         curCoroutine = StartCoroutine(ShowText(currentScene.text));
+        if(currentScene.effect!=null && currentScene.effect=="shake")
+        {
+            EffectControl.EffectInstance.shake = true;
+        }
     }
 
     private void createBotton()

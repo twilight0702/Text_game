@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u6587\u5B57\u6587\u5B57"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 65b6dda24662eb243a6a33df8b0b3d46, type: 2}
-  m_sharedMaterial: {fileID: -2229950540627221439, guid: 65b6dda24662eb243a6a33df8b0b3d46, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 298ddd34db63b91459142b1486a8ceed, type: 2}
+  m_sharedMaterial: {fileID: 5361737995274458359, guid: 298ddd34db63b91459142b1486a8ceed, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

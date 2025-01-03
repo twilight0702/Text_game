@@ -178,8 +178,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 65b6dda24662eb243a6a33df8b0b3d46, type: 2}
-  m_sharedMaterial: {fileID: -2229950540627221439, guid: 65b6dda24662eb243a6a33df8b0b3d46, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 298ddd34db63b91459142b1486a8ceed, type: 2}
+  m_sharedMaterial: {fileID: 5361737995274458359, guid: 298ddd34db63b91459142b1486a8ceed, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -473,6 +473,9 @@ MonoBehaviour:
   dialogueText: {fileID: 301550776}
   buttonPrefab: {fileID: 7458313107499116720, guid: feb3574232eeb8e4d9990185622ff18a, type: 3}
   buttonContainer: {fileID: 1871820138}
+  file: gameData
+  fadeImage: {fileID: 0}
+  fadeDuration: 1
 --- !u!1 &1522829919
 GameObject:
   m_ObjectHideFlags: 0
