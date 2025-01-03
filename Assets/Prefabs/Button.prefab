@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: "\u6587\u5B57\u6587\u5B57"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 65b6dda24662eb243a6a33df8b0b3d46, type: 2}
   m_sharedMaterial: {fileID: -2229950540627221439, guid: 65b6dda24662eb243a6a33df8b0b3d46, type: 2}
@@ -173,7 +173,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 820.6543, y: -588}
-  m_SizeDelta: {x: 382.3004, y: 30}
+  m_SizeDelta: {x: 382.3004, y: 35.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1899231014297427224
 CanvasRenderer:

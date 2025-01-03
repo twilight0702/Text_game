@@ -21,7 +21,7 @@ public class StartScene : MonoBehaviour
     public void StartBottun()
     {
         Debug.Log("Start");
-        SceneManager.LoadScene("TouchScene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
     
 }

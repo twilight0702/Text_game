@@ -29,10 +29,10 @@ public class CentrolControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!HasCollectionObject())
-        {
-            SceneManager.LoadScene("GameScene");
-        }
+        // if(!HasCollectionObject())
+        // {
+        //     SceneManager.LoadScene("GameScene");
+        // }
     }
 
         // 检查场景中是否有标签为 "Collection" 的物体
