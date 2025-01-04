@@ -53,9 +53,15 @@ public class ObjectClickHandler : MonoBehaviour
                 CentrolControl.ControlInstance.curObject = gameObject;
                 Debug.Log("ID为12的区块文本: " + block.text);
                 GameObject name = GameObject.Find("ObjectName");
-                name.GetComponent<TextMeshProUGUI>().text = block.name;
+                if (name != null)
+                {
+                    name.GetComponent<TextMeshProUGUI>().text = block.name;
+                }
                 GameObject content = GameObject.Find("Content");
-                content.GetComponent<TextMeshProUGUI>().text = block.text;
+                if (content != null)
+                {
+                    content.GetComponent<TextMeshProUGUI>().text = block.text;
+                }
             }
             else
             {
