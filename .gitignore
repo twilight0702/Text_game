@@ -55,3 +55,6 @@ Thumbs.db
 *.ccp4
 *.lock
 *.lock.json
+
+#资源相关
+Assets/Fonts/
