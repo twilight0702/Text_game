@@ -43,7 +43,7 @@ public class TextGameManager : MonoBehaviour
 
     private float revealSpeed = 0.05f;
     private State curState = State.IsShowing;
-    private Coroutine curCoroutine; // 用来存储协程的引用
+    private Coroutine curCoroutine; // 用来存储协程的引用 
 
     private enum State
     {
@@ -104,6 +104,7 @@ public class TextGameManager : MonoBehaviour
         if(currentScene.effect!=null && currentScene.effect=="shake")
         {
             EffectControl.EffectInstance.shake = true;
+            SoundEffect.Instance.playShakeSound();
         }
     }
 

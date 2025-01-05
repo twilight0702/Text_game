@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class Menu : MonoBehaviour
     }
 
     // 退出游戏的函数
-    void Exit()
+    public void Exit()
     {
         // 如果是在编辑模式中，停止播放
 #if UNITY_EDITOR
@@ -24,5 +25,10 @@ public class Menu : MonoBehaviour
         // 如果是在构建版本中，退出游戏
         Application.Quit();
 #endif
+    }
+
+    public void ReturnToStart()
+    {
+        SceneManager.LoadScene("Start");
     }
 }

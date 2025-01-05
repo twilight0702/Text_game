@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TouchScene.unity
     guid: 4bd798b49c6a6454fa530c9d5711e0ec
   - enabled: 1
+    path: Assets/Scenes/end.unity
+    guid: f768cfd65bf5fdf458cb7f2913eea369
+  - enabled: 0
     path: Assets/Scenes/GameScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

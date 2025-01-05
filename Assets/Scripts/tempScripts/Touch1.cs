@@ -1,9 +1,6 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.Android.Gradle;
-using Unity.Loading;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -42,6 +39,7 @@ public class Touch1 : MonoBehaviour
 
     private bool canGo = false;
     private ShowContent curContent;
+    private Coroutine myCoroutine;
     //放置显示文字的实际游戏物品
     public GameObject textContainer;
     public GameObject text;
@@ -108,7 +106,7 @@ public class Touch1 : MonoBehaviour
         string textString = curContent.text;
         if (text != null)
         {
-            StartCoroutine(ShowText(textString));
+            myCoroutine = StartCoroutine(ShowText(textString));
         }
         string curEffect = curContent.effect;
         if (curEffect != null && curContent.effect == "get key")
@@ -136,10 +134,10 @@ public class Touch1 : MonoBehaviour
     private void ShowBottons()
     {
         AaptOptions[] buttons = curContent.aptOptions;
-        if (buttons == null) 
+        if (buttons == null)
         {
             Debug.Log("没有选项");
-            canGo=true;
+            canGo = true;
             return;
         }
         if (buttons.Length != 0)
@@ -176,5 +174,13 @@ public class Touch1 : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         message.SetActive(false);
+    }
+
+    public void DestroyMyCourtine()
+    {
+        if (myCoroutine != null)
+        {
+            StopCoroutine(myCoroutine);
+        }
     }
 }

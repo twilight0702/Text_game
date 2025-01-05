@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class CheckTextContainer : MonoBehaviour
@@ -15,6 +16,7 @@ public class CheckTextContainer : MonoBehaviour
         textContainer.SetActive(false);
         lastCheck=false;
         interactableObjects = GameObject.FindGameObjectsWithTag("Interactable");
+        StartCoroutine(ShowMessage());
     }
 
     // Update is called once per frame
@@ -42,8 +44,33 @@ public class CheckTextContainer : MonoBehaviour
                         collider.enabled = true;
                     }
                 }
+                GameObject bottle1= GameObject.Find("bottle1");
+                if(bottle1!=null)
+                {
+                    Touch1 t= bottle1.GetComponent<Touch1>();
+                    t.DestroyMyCourtine();
+                }   
             }
         }
         lastCheck=temp;
+    }
+
+    public void setMessage(string text)
+    {
+        message.SetActive(true);
+        message.GetComponentInChildren<TextMeshProUGUI>().text = text;
+        StartCoroutine(HideMessage());
+    }
+
+    IEnumerator HideMessage()
+    {
+        yield return new WaitForSeconds(2f);
+        message.SetActive(false);
+    }
+
+    IEnumerator ShowMessage()
+    {
+        yield return new WaitForSeconds(1f);
+        setMessage("点击场景中的物体试试看吧");
     }
 }
